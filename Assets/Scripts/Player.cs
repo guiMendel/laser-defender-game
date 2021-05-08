@@ -19,17 +19,9 @@ public class Player : MonoBehaviour
   float xMin;
   float xMax;
 
-  IEnumerator test()
-  {
-    Debug.Log(42);
-    yield return new WaitForSeconds(2);
-    Debug.Log(84);
-  }
-
   private void Start()
   {
     SetMoveBoundaries();
-    StartCoroutine("test");
   }
 
   // Update is called once per frame
