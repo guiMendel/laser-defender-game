@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8478608585121682541}
   - component: {fileID: 8478608585121682542}
   - component: {fileID: 8478608585121682540}
-  m_Layer: 0
+  - component: {fileID: 2026849352081568967}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,6 +97,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a2ede4236bcd634fb891f5ef2703e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
-  moveBoundaryPadding: 0.5
+  health: 500
+  gameoverTimeout: 2
+  levelHandler: {fileID: 3593371363124999008, guid: 80a8655c922ea3547bd8c9cbacbe10bf, type: 3}
+  moveSpeed: 10
+  moveBoundaryPaddingX: 0.5
+  moveBoundaryPaddingY: 0.7
   laserPrefab: {fileID: 8356577925863615483, guid: 6106b499d0f142744bbb2518964661c8, type: 3}
+  laserFiringRate: 0.12
+  explosionVFX: {fileID: 3871498355825821905, guid: 07ef7d13de93f4b48be8a22a8c8563c0, type: 3}
+  hitVFX: {fileID: 3871498355825821905, guid: 3562006efddfcae45ac56f604f66abb8, type: 3}
+  vfxDuration: 1
+  explosionSFX: {fileID: 8300000, guid: 2a45bd827eea3114eacba873ff57cab8, type: 3}
+  hitSFX: {fileID: 8300000, guid: ffa52b8ccb56ec743b3ee5326593c19c, type: 3}
+  fireSFX: {fileID: 8300000, guid: 64e1f232f1d794242b51f81c9d03436d, type: 3}
+  explosionSFXVolume: 0.75
+  hitSFXVolume: 0.75
+  fireSFXVolume: 0.185
+--- !u!60 &2026849352081568967
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8478608585121682543}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.99, y: 0.75}
+    newSize: {x: 0.99, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.46033752, y: 0.04484272}
+      - {x: 0.36165622, y: -0.031483673}
+      - {x: 0.10766875, y: 0.111514434}
+      - {x: 0.06134221, y: 0.3620019}
+      - {x: -0.05300627, y: 0.35983515}
+      - {x: -0.12333594, y: 0.096837044}
+      - {x: -0.36465463, y: -0.036820948}
+      - {x: -0.4646703, y: 0.04083988}
+      - {x: -0.44950542, y: -0.22766887}
+      - {x: -0.39250386, y: -0.2005097}
+      - {x: -0.13416797, y: -0.2625045}
+      - {x: -0.064670324, y: -0.34683704}
+      - {x: 0.06600471, y: -0.3511696}
+      - {x: 0.13801411, y: -0.26333585}
+      - {x: 0.39434066, y: -0.2086736}
+      - {x: 0.44733903, y: -0.22900283}

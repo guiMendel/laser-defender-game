@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2263583925765421693}
   - component: {fileID: 5872055899587568925}
   - component: {fileID: -4788295138537124086}
-  - component: {fileID: 1854246280751972089}
   - component: {fileID: 4252658051100513846}
-  m_Layer: 0
+  - component: {fileID: 1854246280751972089}
+  - component: {fileID: 2668131808631396213}
+  m_Layer: 8
   m_Name: Player Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 96f761d0637aaa841be888c1d3e8c0bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0b7051c85b4e9904698375a0987e2997, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,6 +108,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &4252658051100513846
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8356577925863615483}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.050421476}
+  m_Size: {x: 0.116195574, y: 0.64499474}
+  m_Direction: 0
 --- !u!114 &1854246280751972089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,20 +136,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c9ef6bdcc6be8408962ec220b20d3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 30
---- !u!70 &4252658051100513846
-CapsuleCollider2D:
+  projectileSpeed: 45
+--- !u!114 &2668131808631396213
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8356577925863615483}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.11421319, y: 0.6852792}
-  m_Direction: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8396c4d70a429848a97bf93d6bb59b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
