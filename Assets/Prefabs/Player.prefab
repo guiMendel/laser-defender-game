@@ -107,7 +107,7 @@ MonoBehaviour:
   laserFiringRate: 0.12
   explosionVFX: {fileID: 3871498355825821905, guid: 07ef7d13de93f4b48be8a22a8c8563c0, type: 3}
   hitVFX: {fileID: 3871498355825821905, guid: 3562006efddfcae45ac56f604f66abb8, type: 3}
-  vfxDuration: 1
+  vfxDuration: 3
   explosionSFX: {fileID: 8300000, guid: 2a45bd827eea3114eacba873ff57cab8, type: 3}
   hitSFX: {fileID: 8300000, guid: ffa52b8ccb56ec743b3ee5326593c19c, type: 3}
   fireSFX: {fileID: 8300000, guid: 64e1f232f1d794242b51f81c9d03436d, type: 3}
